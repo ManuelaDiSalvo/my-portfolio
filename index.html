@@ -11,25 +11,32 @@
 
     <header></header>
 
-<ul id="Principalmenu"></ul>
+</nav>
+<main class="main-content">
+  <h3 class="me">🌸 About me 🌸</h3>
+  <p>My name is Manuela, I am 34 years old and I am an Italian girl living in Barcelona.I have a degree in Philosophy and Work Psychology with a Masters in Human Resources.On September 2022, during my motherhood, I won the "Woman in tech" course offered by Glovo and Keepcoding and I'm discovering my new passion for IT! 
+    I dedicate this to my daughter.</p>
 
-<h4>Sign up:</h4>
-<form action = "login.html" method="post" novalidate>
+    <a class="link GitHub" href="https://github.com/ManuelaDiSalvo" target="_blank">My_GitHub</a>
+   
+
+<h4 class="you">Put your contact:</h4>
+<form action = "login.html" method="get">
     <div>
-      <label  for="name">nombre</label>
+      <label  for="name">Name</label>
       <input required id="name" name="name" type="text" placeholder="Añade tu nombre">
     </div>
     <div>
-      <label for="mail">email</label>
-      <input required id="mail" name="email" type="email">
+      <label for="surname">Surname</label>
+      <input required id="surname" name="surname" type="surname">
     </div>
     <div>
-      <label  for="number">password</label>
-      <input required id="number" name="number" type="number">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]+">
     </div>
     <fieldset>
         
-      <legend>How did you know us</legend>
+      <legend class="us">How did you know us</legend>
       
       <label class="block"for="University">University</label>
       <input required id="University" type="radio" name="favLang" value="University">
@@ -43,27 +50,26 @@
       <label class="block"for="GitHub">GitHub</label>
       <input  required id="GitHub" type="radio" name="favLang" value="GitHub">
     </fieldset>
-    <input type="submit" value="save">
+    <input type="submit" value="Save">
   </form>
-
-</nav>
-<main class="main-content">
-  <h3>Let's to discover us!</h3>
   
 </main>
     
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="contact.html">💬 My_Contact 💬</a></li>
+  <li><a href="progress.html">🎮 My_IT_Progress 🎮</a></li>
+
+</ul>
+
 
     </section>
 
   <footer>
     
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about-us.html">About US</a></li>
-            <li><a href="progress.html">IT Progress</a></li>
-        </ul>
-        <a class="link white" href="https://google.com" target="_blank">Ir a google</a>
+    <a class="link facebook" href="https://www.facebook.com/login/" target="_blank">My_Facebook</a>
+    <a class="link twitter" href="https://www.twitter.com/login/" target="_blank">My_Twitter</a> 
+    <a class="link Instagram" href="https://www.instagram.com/login/" target="_blank">My_Instagram</a>
 
   </footer>
 </body>
