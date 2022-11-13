@@ -2,25 +2,35 @@ html,
 body
 {
    margin: 50;
-    background: #eee;
+    background: #abdbe3;
     justify-content: center;
 }
 
 label{
-    color: orange;
+    color: palevioletred;
 }
 
 h1{color: #000;}
-h2{color: orangered;}
+h2{color: palevioletred;}
 h3{color: #000;}
+
+.me{
+    color: palevioletred
+}
+
+.you{
+    color: goldenrod
+}
+
+.us{
+    color: fuchsia;
+}
+.contact{
+    color: palevioletred;
+}
 
 .block{color: #000;}
 legend{color: orangered;}
-
-
-#Principalmenu{
-    border: 1px solid orange;
-}
 
 
 header {
@@ -32,100 +42,60 @@ header {
 }
   
   
-      
-
-
-      
-
-@media  screen and (min-width: 720px) {
-    .main {
-        grid-template-columns: min-content 1fr;
-    }
+.ability{
+    width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
 }
-    
-.column{
-    display: grid;
-    gap:0.5em
-
-}
-@media  screen and (min-width: 720px) {
-    .column--right {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, min-content)
-    }
+.container{
+    width: 100%;
+    background-color: #add;
 }
 
-.skills {
-    padding: 1em 0;
+.skills{
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
 }
 
-.skills__item{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.Python{
+    background-color: palevioletred;
+    animation: fillPython 5s forwards;
 }
 
-.skills__bar
-.skills__bar::after{
-    position: relative;
-    width: 175px;
-    height: 8px;
-    background-color: rebeccapurple;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    
+.HTML{
+    background-color: rgb(218, 77, 124);
+    animation: fillHTML 5s forwards;
 }
 
-.skills__bar::after{
-    content: '' ;
-    position: absolute;
-    left: -175px;
-    background-color: var(--primary-color);
-    transition: var(--transition);
-    animation: skills-bar-fill 2s ease-in-out forwards;
-}
-.skills_bar--70::after{
-    --skills-bar-lenght:10%;
-}
-.skills_bar--70::after{
-    --skills-bar-lenght:20%;
-}
-.skills_bar--70::after{
-    --skills-bar-lenght:30%;
-}
-.skills_bar--70::after{
-    --skills-bar-lenght:40%;
-}
-.skills_bar--70::after{
-    --skills-bar-lenght:50%;
-}
-.skills_bar--70::after{
-    --skills-bar-lenght:60%;
-}
-.skills_bar--70::after{
-    --skills-bar-lenght:70%;
-}
-.skills_bar--70::after{
-    --skills-bar-lenght:80%;
-}
-.skills_bar--70::after{
-    --skills-bar-lenght:90%;
+.Css{
+    background-color: palevioletred;
+    animation: fillCss 5s forwards;
 }
 
-:root{
-    --primary-color: hsl(214, 84%, 56%);
-    --text-color: hsl(0,0%, 31%);
-    --bg-color: hsl(0, 0%, 90%);
-    --bg-card-color: hsl(0,0%,98%);
-    --border-radius: 0.4em
-    --transition: color 0,1s, background-color 0.2s ease-in-out;
-    --skills-bar-length: 0%;
+.Javascript{
+    background-color: pink;
+    animation: fillJavascript 5s forwards;
+}
+@keyframes fillPython{
+    0%{width: 0}
+    100%{width: 80%}
 
 }
+@keyframes fillHTML{
+    0%{width: 0}
+    100%{width: 70%}
 
-*{box-sizing: border-box}
-@keyframes skills-bar-fill {
-    to{
-        transform: translateX(var(--skill-bar-lenght));
-    }
+}
+@keyframes fillCss{
+    0%{width: 0}
+    100%{width: 70%}
+
+}
+@keyframes fillJavascript{
+    0%{width: 0}
+    100%{width: 10%}
+
 }
